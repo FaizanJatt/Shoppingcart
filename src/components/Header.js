@@ -10,7 +10,7 @@ function Header({ mode, toggleCart, quantity }) {
         <div
           className={mode ? "catalog-header-left header--left" : "header--left"}
         >
-          <Link to={"/"}>Apple Store</Link>
+          <Link to={"/Shoppingcart"}>Apple Store</Link>
         </div>
 
         <ul
@@ -19,7 +19,7 @@ function Header({ mode, toggleCart, quantity }) {
           }
         >
           <li>
-            <Link to={"/catalog"}>Products</Link>
+            <Link to={"/Shoppingcart/catalog"}>Products</Link>
           </li>
           <li>
             <i className="fa-solid fa-magnifying-glass"></i>

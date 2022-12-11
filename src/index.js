@@ -9,7 +9,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
   {
-    path: "/catalog",
+    path: "/Shoppingcart/catalog",
     element: <Catalog />,
   },
   { path: "/Shoppingcart/", element: <App /> },
