@@ -181,7 +181,8 @@ hr {
   margin: 0 auto;
   flex-direction: column;
   justify-content: space-between;
-  animation: cart 500ms forwards 2ms 1 normal;
+  /* animation: cart 500ms forwards 2ms 1 normal; */
+  width: clamp(36vw, 600px, 40vw);
   overflow-y: scroll;
 }
 .enclosure {
@@ -255,17 +256,6 @@ hr {
   font-weight: bold;
   font-family: cursive;
 }
-/* .fade {
-  background-color: #312f2f;
-  color: #615a5a;
-}
-.fade > * {
-  background-color: #242626;
-  color: #615a5a;
-}
-.fade > * > * {
-  color: #615a5a;
-} */
 
 .checkout {
   list-style: none;
@@ -330,7 +320,11 @@ hr {
     border: none;
   }
   .enclosure {
-    width: 20%;
+    margin-left: 20px;
+  }
+  .Cart {
+    width: 73vw;
+    align-items: flex-start;
   }
 }
 @media (max-width: 540px) {
