@@ -13,6 +13,7 @@ const router = createBrowserRouter([
     element: <Catalog />,
   },
   { path: "/Shoppingcart/", element: <App /> },
+  { path: "https://faizanjatt.github.io/Shoppingcart/", element: <App /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
