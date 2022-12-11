@@ -12,6 +12,7 @@ const router = createBrowserRouter([
     path: "/catalog",
     element: <Catalog />,
   },
+  { path: "/Shoppingcart/", element: <App /> },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

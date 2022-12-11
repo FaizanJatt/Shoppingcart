@@ -7,11 +7,9 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
 
   function getCartItems(items) {
-    console.log("getting items");
     setCartItems(items);
   }
   function toggleCart() {
-    console.log("opening cart in homepage");
     setIsCartOpen((prev) => !prev);
   }
   return (
