@@ -272,14 +272,11 @@ hr {
   background-color: white;
 }
 @keyframes cart {
-  25% {
+  /* 25% {
     width: 16vw;
-  }
-  50% {
-    width: 28vw;
-  }
-  75% {
-    width: 32vw;
+  } */
+  0% {
+    width: clamp(50px, 60px, 60px);
   }
   100% {
     width: clamp(36vw, 600px, 40vw);
@@ -294,7 +291,11 @@ hr {
     width: clamp(36vw, 600px, 73vw);
   }
 }
-
+@media (max-width: 3000px) {
+  .Cart {
+    animation: cart 2s backwards 2ms 1 normal;
+  }
+}
 @media (max-width: 600px) {
   .header--right {
     min-width: 50vw;
@@ -334,7 +335,7 @@ hr {
   .Cart {
     width: 73vw;
     align-items: flex-start;
-    animation: carts 500ms forwards 2ms 1 normal;
+    animation: carts 500ms backwards 2ms 1 normal;
   }
 }
 @media (max-width: 540px) {
