@@ -285,6 +285,15 @@ hr {
     width: clamp(36vw, 600px, 40vw);
   }
 }
+@keyframes carts {
+  0% {
+    width: 2px;
+  }
+
+  100% {
+    width: clamp(36vw, 600px, 73vw);
+  }
+}
 
 @media (max-width: 600px) {
   .header--right {
@@ -325,6 +334,7 @@ hr {
   .Cart {
     width: 73vw;
     align-items: flex-start;
+    animation: carts 500ms forwards 2ms 1 normal;
   }
 }
 @media (max-width: 540px) {

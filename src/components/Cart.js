@@ -32,7 +32,7 @@ function Cart({ toggleCart, cartItems, getCartItems }) {
       <div className="enclosure">
         <span onClick={closeCart} className="closeCart">
           <svg
-            class="Cart_svgClose__Wzojf"
+            className="Cart_svgClose__Wzojf"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
